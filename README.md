@@ -10,6 +10,10 @@ I don't really know what will happen if Lutris is open during the import, so mak
 
 - `PyYAML`
 
+## Installation
+
+`pip install --user --upgrade lutris-bulk-adder`
+
 ## Usage
 
 ### Required arguments
@@ -42,6 +46,6 @@ These default to the default locations that Lutris will install to.
 
 ### Example
 
-`./lutris-bulk-adder.py -d /data/Emulation/Wii -r dolphin -s '(USA)' -p "Nintendo Wii" -o platform=1`
+`lutris-bulk-adder -d /data/Emulation/Wii -r dolphin -s '(USA)' -p "Nintendo Wii" -o platform=1`
 
 Adds all files in `/data/Emulation/Wii` to the `dolphin` runner, ignoring substrings containing `(USA)` in the filename when deriving the game name, for the `Nintendo Wii` platform, and adds `platform: '1'` to the `game` key in the YAML file.

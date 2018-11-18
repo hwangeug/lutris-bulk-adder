@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 import re
 import os
 import sys
@@ -139,7 +137,7 @@ def scan_for_filetypes(dir, types):
     return files
 
 
-if __name__ == "__main__":
+def main():
     parser = argparse.ArgumentParser(description='Scan a directory for ROMs to add to Lutris.')
     
     # Required arguments
@@ -264,3 +262,7 @@ Do not write YML files or alter Lutris database, only print data to be written o
             conn.commit()
 
         game_id += 1
+
+
+if __name__ == '__main__':
+    main()
