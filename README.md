@@ -15,7 +15,9 @@ I don't really know what will happen if Lutris is open during the import, so mak
 ### Required arguments
 
 `-d` / `--directory`: Directory to scan for ROM files.
+
 `-r` / `--runner`: Slug name of Lutris runner to use (e.g. `dolphin`, `snes9x`)
+
 `-p` / `--platform`: Platform name.  A list of platform names is included in the script, but if one is not included, you can figure it out by looking at the Lutris [runner class definitions](https://github.com/lutris/lutris/tree/master/lutris/runners) for the value(s) listed under the `platforms` member.
 
 ### Lutris path arguments
@@ -23,14 +25,19 @@ I don't really know what will happen if Lutris is open during the import, so mak
 These default to the default locations that Lutris will install to.
 
 `-ld` / `--lutris-database`: Path to the Lutris SQLite database.  Default: `~/.local/share/lutris/pga.db`
+
 `-ly` / `--lutris-yml-dir`: Directory containing Lutris installed game YAML files.  Default: `~/.config/lutris/games`
+
 `-lg` / `--lutris-game-dir`: Lutris games installation directory.  This shouldn't do anything as ROMs aren't installed, but the Lutris database needs it.  Default: `~/Games`
 
 ### Other arguments
 
 `-f` / `--file-types`: Space-separated list of file types to scan for.  Defaults to `iso,zip,sfc,gba,gbc,gb,md,n64,nes,32x,gg,sms`
+
 `-o` / `--game-options`: Additional options to write to the YAML file under the "game" key (e.g. platform number as required for Dolphin)
+
 `-s` / `--strip-filename`: Space-separated list of strings to strip from filenames when generating game names.
+
 `-n` / `--no-write`: Do not write YML files or alter Lutris database, only print data to be written out to stdout. (i.e. dry run)
 
 ### Example
