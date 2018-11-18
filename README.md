@@ -1,4 +1,4 @@
-# `lutris-bulk.adder.py`
+# `lutris-bulk-adder`
 
 ## Description
 
@@ -46,6 +46,6 @@ These default to the default locations that Lutris will install to.
 
 ### Example
 
-`lutris-bulk-adder -d /data/Emulation/Wii -r dolphin -s '(USA)' -p "Nintendo Wii" -o platform=1`
+`lutris_bulk_adder -d /data/Emulation/Wii -r dolphin -s '(USA)' -p "Nintendo Wii" -o platform=1`
 
 Adds all files in `/data/Emulation/Wii` to the `dolphin` runner, ignoring substrings containing `(USA)` in the filename when deriving the game name, for the `Nintendo Wii` platform, and adds `platform: '1'` to the `game` key in the YAML file.
