@@ -39,7 +39,7 @@ PLATFORMS = [
     'Nintendo Game Boy (Color)',
     'Nintendo Game Boy Advance',
     'Nintendo Game Boy Color',
-    'Nintendo Gamecube',
+    'Nintendo GameCube',
     'Nintendo N64',
     'Nintendo NES',
     'Nintendo SNES',
