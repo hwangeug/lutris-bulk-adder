@@ -234,11 +234,13 @@ Do not write YML files or alter Lutris database, only print data to be written o
             "installed": 1,
             "installed_at": ts,
             "year": None,
-            "steamid": None,
             "configpath": config_file,
             "has_custom_banner": None,
             "has_custom_icon": None,
-            "playtime": None
+            "playtime": None,
+            "hidden": 0,
+            "service": None,
+            "service_id": None
         }
 
         # Output to console
