@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import re
 import os
 import sys
@@ -39,7 +41,7 @@ PLATFORMS = [
     'Nintendo Game Boy (Color)',
     'Nintendo Game Boy Advance',
     'Nintendo Game Boy Color',
-    'Nintendo Gamecube',
+    'Nintendo GameCube',
     'Nintendo N64',
     'Nintendo NES',
     'Nintendo SNES',
@@ -234,11 +236,13 @@ Do not write YML files or alter Lutris database, only print data to be written o
             "installed": 1,
             "installed_at": ts,
             "year": None,
-            "steamid": None,
             "configpath": config_file,
             "has_custom_banner": None,
             "has_custom_icon": None,
-            "playtime": None
+            "playtime": None,
+            "hidden": 0,
+            "service": None,
+            "service_id": None
         }
 
         # Output to console
