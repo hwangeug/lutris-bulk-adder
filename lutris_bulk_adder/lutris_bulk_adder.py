@@ -189,7 +189,12 @@ Do not write YML files or alter Lutris database, only print data to be written o
     except sqlite3.OperationalError:
         print("SQLite error, is {} a valid Lutris database?".format(args.lutris_database))
         sys.exit(1)
-    game_id = cur.fetchone()[0] + 1
+      
+    new_id = cur.fetchone()[0];
+    if new_id is None:
+        new_id = 0;
+
+    game_id = new_id + 1
     
     # Scan dir for ROMs
     files = scan_for_filetypes(args.directory, args.file_types)
